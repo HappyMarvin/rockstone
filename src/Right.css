@@ -1,0 +1,7 @@
+.right {
+    width: 50%;
+    overflow: auto;
+    height: 300px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}

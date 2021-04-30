@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  height: 300px;
+  border: 1px solid black;
+}
+.container-inner {
+  width: 200%;
+  display: flex;
+}

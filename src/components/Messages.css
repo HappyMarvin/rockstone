@@ -1,6 +1,54 @@
 .messages {
-
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
 }
-.message {
 
+.messages__item {
+    position: relative;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.messages__text {
+    animation: textFadeIn 1s forwards;
+}
+
+.messages__decor {
+    width: 0%;
+    height: 100%;
+    background: #ffb510;
+    position: absolute;
+    animation: decor 1s cubic-bezier(.74, .06, .4, .92) forwards;
+    display: flex;
+}
+
+
+@keyframes decor {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -1,15 +1,17 @@
 import "./Form.css"
 import {useState} from "react";
 
-function Form ({ addMessage }) {
+function Form({addMessage}) {
   const [textInput, setTextInput] = useState('');
 
-  function handleSubmit (e) {
+  function handleSubmit(e) {
     e.preventDefault();
+    if (!textInput) return
     addMessage(textInput);
+    setTextInput('');
   }
 
-  function changeInput (e) {
+  function changeInput(e) {
     setTextInput(e.target.value)
   }
 
@@ -26,8 +28,10 @@ function Form ({ addMessage }) {
       <button
         type={`submit`}
         className="form__submit"
-      >Send</button>
+      >Send
+      </button>
     </form>
   )
 }
+
 export default Form

@@ -25,9 +25,9 @@ function App() {
     <div className="App">
       <div className="container" {...swipeHandlers}>
         <div className="container-inner">
-        <Left className="left" isHidden={leftHidden} />
+          <Left className="left" isHidden={leftHidden}/>
 
-        <Right className="right" />
+          <Right className="right"/>
         </div>
       </div>
     </div>

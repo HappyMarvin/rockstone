@@ -9,12 +9,10 @@ function App() {
   const [leftHidden, setLeftHidden] = useState(false);
 
   const handlerSwipeRight = () => {
-    console.log('swipe right')
     setLeftHidden(false)
   }
 
   const handlerSwipeLeft = () => {
-    console.log('swipe left')
     setLeftHidden(true)
   }
 

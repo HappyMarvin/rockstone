@@ -4,7 +4,9 @@ function Right () {
 
   return (
     <div className={`right`}>
-      <p>right</p>
+      <div className="right__inner">
+        <p>right</p>
+      </div>
     </div>
   )
 }

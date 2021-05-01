@@ -1,0 +1,11 @@
+.right {
+    width: calc(50%);
+    height: calc(100vh - 10px);
+}
+
+.right__inner {
+    overflow: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: calc(100vh - 10px);
+}

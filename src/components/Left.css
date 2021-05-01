@@ -1,0 +1,18 @@
+.left {
+    width: calc(50%);
+    overflow: auto;
+    height: calc(100vh - 10px);
+    transition: margin-left 700ms;
+    box-sizing: border-box;
+}
+.left__inner {
+    min-height: calc(100vh - 10px);
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left_hidden {
+    margin-left: -50%;
+    border-right: none;
+}

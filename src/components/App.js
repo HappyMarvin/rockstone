@@ -26,7 +26,6 @@ function App() {
       <div className="container" {...swipeHandlers}>
         <div className="container-inner">
           <Left className="left" isHidden={leftHidden}/>
-
           <Right className="right"/>
         </div>
       </div>
